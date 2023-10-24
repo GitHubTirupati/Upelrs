@@ -25,7 +25,7 @@
 ## Optional
 
 ### Using the API standalone
-The Todo REST API can run standalone as well. You can run the [TodoApi](TodoApi) project and make requests to various endpoints using the Swagger UI (or a client of your choice):
+The Todo REST API can run standalone as well. You can run the [TodoApi]) project and make requests to various endpoints using the Swagger UI (or a client of your choice):
 <img width="1208" alt="image" src="https://github.com/GitHubTirupati/Upelrs/assets/38210277/ba11ceaa-00df-4b51-81e8-1ec40ee7eb10">
 
 
