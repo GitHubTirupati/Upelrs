@@ -11,9 +11,10 @@
 1. [Install SQL2019](https://www.microsoft.com/en-us/evalcenter/download-sql-server-2019)
 
 ### Database
-1. Navigate to the `TodoApi` folder.
+1.Update SQL Connection string in DefaultConnection in appsettings.json
+2. Navigate to the `TodoApi` folder.
     1. Run `update-database` to create the database.
-2. Learn more about [dotnet-ef](https://learn.microsoft.com/en-us/ef/core/cli/dotnet)
+3. Learn more about [dotnet-ef](https://learn.microsoft.com/en-us/ef/core/cli/dotnet)
 
 ### Running the application
 
