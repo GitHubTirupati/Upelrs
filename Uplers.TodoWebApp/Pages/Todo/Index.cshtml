@@ -1,0 +1,54 @@
+﻿@page
+@model Uplers.TodoWebApp.Pages.Todo.IndexModel
+@{
+    ViewData["Title"] = "Todo List";
+}
+<h2 id="title">@ViewData["Title"]</h2>
+
+<p>
+    <a asp-page="Create">Create Todo</a>
+</p>
+@if (Model.todoResult.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.todoResult[0].Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.todoResult[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.todoResult[0].IsComplete)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.todoResult)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsComplete)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data</p>
+}

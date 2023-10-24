@@ -1,0 +1,45 @@
+﻿@page "{id:int}"
+@model Uplers.TodoWebApp.Pages.Todo.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+<h2>Edit</h2>
+
+<h4>Todo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="todo.Id" />
+            <div class="form-group">
+                <label asp-for="todo.Id" class="control-label"></label>
+                <div>@Html.DisplayFor(model => model.todo.Id)</div>
+            </div>
+            <div class="form-group">
+                <label asp-for="todo.Name" class="control-label"></label>
+                <input asp-for="todo.Name" class="form-control" />
+                <span asp-validation-for="todo.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="todo.IsComplete" class="control-label"></label>
+                <input asp-for="todo.IsComplete" type="checkbox" />
+                <span asp-validation-for="todo.IsComplete" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

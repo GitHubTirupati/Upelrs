@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "my6yY745fHfkgu/drw/Bubeikw1Xd55KE4lCzSZlLam2vBYt/VHUkFJN2eDmKrf8z9hVW5HF1FFk1SPvBIHjYg==",
+  "success": true,
+  "projectFilePath": "C:\\Uplers.TodoApi\\Uplers.TodoWebApp\\Uplers.TodoWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tibhusha\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
